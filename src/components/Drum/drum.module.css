@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+body {
+  font-family: "Syncopate";
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #eec9ff;
+  --secondary: #1d1539;
+  --tertiary: #293353;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400vw;
+}
+
+.drum {
+  background-color: var(--tertiary);
+  border-radius: 0.5vw;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #eec9ff;
+  --secondary: #1d1539;
+  --tertiary: #293353;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Syncopate";
+  background-color: var(--secondary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-weight: 700;
+  font-size: 1vw;
+  text-transform: uppercase;
+  color: var(--primary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Um alles zu zentrieren */
+.app {
   display: flex;
   flex-direction: column;
+  padding-top: 1%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* um die Buttons in 2 Spalten aufzuteilen => auto auto */
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  gap: 0.2vw;
+  padding-top: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* 
+.bgContainer {
+  z-index: -1;
+  position: fixed;
+  background-image: url("./paper_background.jpg");
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: 500px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (min-width: 700px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */
