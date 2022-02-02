@@ -17,7 +17,14 @@
 
 h1 {
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 3vw;
   text-transform: uppercase;
   color: var(--primary);
 }
@@ -26,7 +33,7 @@ h1 {
 .app {
   display: flex;
   flex-direction: column;
-  padding-top: 3%;
+  padding-top: 10%;
   align-items: center;
 }
 
@@ -35,8 +42,12 @@ h1 {
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
-  gap: 0.2vw;
-  padding-top: 3%;
+  gap: 0.8vw;
+  padding-top: 5%;
+}
+
+.toggleswitch {
+  padding-top: 10%;
 }
 
 /* 

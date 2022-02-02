@@ -15,14 +15,13 @@ body {
 .container {
   position: relative;
   width: 100%;
-  max-width: 400vw;
 }
 
 .drum {
   background-color: var(--tertiary);
-  border-radius: 0.5vw;
-  width: 10vw;
-  height: 10vw;
+  border-radius: 3vw;
+  width: 45vw;
+  height: 45vw;
   display: flex;
   align-items: center;
   justify-content: center;
