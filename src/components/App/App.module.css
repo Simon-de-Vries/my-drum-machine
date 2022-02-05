@@ -9,7 +9,7 @@
 }
 
 * {
-  margin: 0;
+  margin: 1%;
   box-sizing: border-box;
   font-family: "Syncopate";
   background-color: var(--secondary);
@@ -22,18 +22,38 @@ h1 {
   color: var(--primary);
 }
 
+.drumkitButtonContainer {
+  display: flex;
+  grid-template-columns: 10px 10px;
+  grid-template-rows: 15px;
+  grid-column-gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.drumkitButton {
+  display: flex;
+  width: 26vw;
+  height: 7vw;
+  background-color: var(--tertiary);
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5vw;
+}
+
 h2 {
-  font-weight: 400;
-  font-size: 3vw;
+  font-weight: 700;
+  font-size: 2vw;
   text-transform: uppercase;
   color: var(--primary);
+  background-color: var(--tertiary);
 }
 
 /* Um alles zu zentrieren */
 .app {
   display: flex;
   flex-direction: column;
-  padding-top: 10%;
+  padding-top: 5%;
   align-items: center;
 }
 
