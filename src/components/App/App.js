@@ -4,29 +4,22 @@ import assets from "../../assets.js";
 import { useState } from "react";
 
 function App() {
-  // const [isToggled, setIsToggled] = useState(false);
-  // const onToggle = () => setIsToggled(!isToggled);
-  const metalDrumkit = () => {
-    <Drum togglebool={true} />;
-  };
-  const indieDrumkit = () => {
-    <Drum togglebool={false} />;
-  };
+  const [toggle, setToggle] = useState(true);
 
   return (
     <div className={styles.app}>
       <h1>drum machine</h1>
       <div className={styles.drumkitButtonContainer}>
-        <div className={styles.drumkitButton} onClick={metalDrumkit}>
+        <div className={styles.drumkitButton} onClick={() => setToggle(false)}>
           <h2>metal</h2>
         </div>
-        <div className={styles.drumkitButton} onClick={indieDrumkit}>
+        <div className={styles.drumkitButton} onClick={() => setToggle(true)}>
           <h2>indie</h2>
         </div>
       </div>
       <div className={styles.container}>
         {assets.map((element) => (
-          <Drum data={element} key={element.id} />
+          <Drum data={element} key={element.id} togglebool={toggle} />
         ))}
       </div>
     </div>
