@@ -1,6 +1,6 @@
 import styles from "../Drum/drum.module.css";
 
-function Drum({ data }, { togglebool }) {
+function Drum({ data, togglebool }) {
   const play = () => {
     if (togglebool === true) {
       new Audio(`./assets/${data.indie_src}`).play();
