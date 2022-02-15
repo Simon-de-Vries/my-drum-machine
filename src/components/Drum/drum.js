@@ -12,7 +12,7 @@ function Drum({ data, togglebool }) {
   if (data.type === "img") {
     return (
       <div className={styles.container}>
-        <div className={styles.drum} onClick={play} onTouchStart={play}>
+        <div className={styles.drum} onClick={play}>
           <img
             //Icons
             className={styles.image}
