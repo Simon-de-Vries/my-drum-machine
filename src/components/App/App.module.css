@@ -6,6 +6,8 @@
   --primary: #eec9ff;
   --secondary: #1d1539;
   --tertiary: #293353;
+  --pressed: #202241;
+  --transparent: rgba(0, 0, 0, 0);
 }
 
 * {
@@ -20,6 +22,7 @@ h1 {
   font-size: 5vw;
   text-transform: uppercase;
   color: var(--primary);
+  background-color: var(--transparent);
 }
 
 .drumkitButtonContainer {
@@ -35,7 +38,17 @@ h1 {
   display: flex;
   width: 26vw;
   height: 7vw;
-  background-color: var(--tertiary);
+  background-color: var(--pressed);
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5vw;
+}
+
+.drumkitButtonPressed {
+  display: flex;
+  width: 26vw;
+  height: 7vw;
+  background-color: var(--white);
   align-items: center;
   justify-content: center;
   border-radius: 1.5vw;
@@ -46,7 +59,7 @@ h2 {
   font-size: 2vw;
   text-transform: uppercase;
   color: var(--primary);
-  background-color: var(--tertiary);
+  background-color: var(--transparent);
 }
 
 /* Um alles zu zentrieren */
@@ -69,25 +82,3 @@ h2 {
 .toggleswitch {
   padding-top: 10%;
 }
-
-/* 
-.bgContainer {
-  z-index: -1;
-  position: fixed;
-  background-image: url("./paper_background.jpg");
-  background-repeat: repeat;
-  width: 100vw;
-  height: 100vh;
-}
-
-@media (min-width: 500px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 700px) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-} */
