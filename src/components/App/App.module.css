@@ -6,7 +6,7 @@
   --primary: #eec9ff;
   --secondary: #1d1539;
   --tertiary: #293353;
-  --pressed: #202241;
+  --dark: #202241;
   --transparent: rgba(0, 0, 0, 0);
 }
 
@@ -38,7 +38,7 @@ h1 {
   display: flex;
   width: 26vw;
   height: 7vw;
-  background-color: var(--pressed);
+  background-color: var(--dark);
   align-items: center;
   justify-content: center;
   border-radius: 1.5vw;
