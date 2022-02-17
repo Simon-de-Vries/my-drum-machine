@@ -19,9 +19,9 @@ body {
 
 .drum {
   background-color: var(--tertiary);
-  border-radius: 3vw;
-  width: 45vw;
-  height: 45vw;
+  border-radius: 1vw;
+  width: 15vw;
+  height: 15vw;
   display: flex;
   align-items: center;
   justify-content: center;
