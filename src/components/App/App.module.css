@@ -11,7 +11,6 @@
 }
 
 * {
-  margin: 1%;
   box-sizing: border-box;
   font-family: "Syncopate";
   background-color: var(--secondary);
@@ -67,6 +66,7 @@ h2 {
   display: flex;
   flex-direction: column;
   padding-top: 5%;
+  padding-bottom: 5%;
   align-items: center;
 }
 
