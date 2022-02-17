@@ -16,7 +16,7 @@ function App() {
               ? styles.drumkitButtonPressed
               : styles.drumkitButton
           }
-          onClick={() => setToggle(false)}
+          onMouseDown={() => setToggle(false)}
         >
           <h2>metal</h2>
         </button>
@@ -25,7 +25,7 @@ function App() {
           className={
             toggle === true ? styles.drumkitButtonPressed : styles.drumkitButton
           }
-          onClick={() => setToggle(true)}
+          onMouseDown={() => setToggle(true)}
         >
           <h2>indie</h2>
         </button>
